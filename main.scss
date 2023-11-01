@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Ghost';
+    src: url('assets/Sticky\ Sans.otf');
+}
+:root {
+    font-size: 32px;
+    color: #111111;
+}
+
+// Defining Variables
+$ghostfont: 'Ghost', sans-serif;
+$white: #F5F5F5;
+$black: #111111;
+$hotpink: #FF3D7F;
+$babypink: #FF9E9D;
+$crustedmud: #DAD8A7;
+$release: #7FC7AF;
+$abovetheworld: #3FB8AF;
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: $white;
+}
+
+nav {
+    width: 100vw;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    ul {
+        display: flex;
+        list-style-type: none;
+        position: relative;
+        top: -0.5rem;
+        li {
+            padding: 0.5rem;
+        }
+    }
+}
+
+section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.video-hero {
+    height: 100vh;
+    color: $white;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(0deg, #00000088 100%, #ffffff44 30%);
+    p {
+        width: 40vw;
+    }
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    
+}
+
+.logo {
+    color: $babypink;
+    font-family: $ghostfont;
+}
+
+#hero-img {
+    width: 25vw;
+    height: auto;
+}
+
+.lg {
+    font-size: 3.5rem;
+}
+.sm {
+    color: $white;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.above {
+    color: $abovetheworld;
+}
+
+#info-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.info-card {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        position: relative;
+        top: 150px;
+        width: 300px;
+        height: auto;
+    }
+}
+
+.info-card-text {
+    width: 30vw;
+    border-radius: 16px;
+    background-color: $crustedmud;
+    text-align: center;
+    padding-top: 150px;
+}
