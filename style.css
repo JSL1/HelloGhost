@@ -3,7 +3,7 @@
   src: url("assets/Sticky Sans.otf");
 }
 :root {
-  font-size: 32px;
+  font-size: 24px;
   color: #111111;
 }
 
@@ -38,6 +38,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .video-hero {
@@ -113,9 +114,222 @@ section {
 .info-card-text {
   width: 30vw;
   border-radius: 16px;
-  background-color: #DAD8A7;
   text-align: center;
   padding-top: 150px;
+}
+
+.leading {
+  color: #3FB8AF;
+  font-family: "Ghost", sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#cta-one {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #DAD8A7;
+}
+#cta-one button {
+  border-radius: 2.5rem;
+  padding: 16px;
+  width: 35vw;
+  border: 3px solid #111111;
+  box-shadow: #111111 5px 5px 0px;
+  font-family: "Ghost", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  background-color: #7FC7AF;
+}
+#cta-one button :hover {
+  box-shadow: #111111 5px 5px 0px, 0px 6px 11px 16px rgba(255, 61, 127, 0.5);
+}
+
+#cta-speech-bubble {
+  width: 400px;
+  height: 400px;
+  background-image: url("assets/images/doodle-159.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 50%;
+  font-size: 1.5rem;
+}
+#cta-speech-bubble p {
+  margin-top: 4rem;
+  text-align: center;
+}
+#cta-speech-bubble .leading {
+  color: #FF9E9D;
+  font-family: "Ghost", sans-serif;
+}
+
+#cta-arrows {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40vw;
+}
+#cta-arrows img {
+  width: 15vw;
+  height: auto;
+}
+
+#info-jumbo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80vw;
+  min-height: 50vh;
+  padding: 2rem;
+}
+.info-panel div {
+  width: 35%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.info-panel div p, .info-panel div span {
+  margin: 0px;
+}
+.info-panel div img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+.info-panel .middle {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.middle {
+  background-color: #DAD8A7;
+  width: 100vw;
+}
+
+#subscribe {
+  text-align: center;
+  width: 100vw;
+  background-color: #111111;
+  color: #DAD8A7;
+}
+#subscribe input {
+  width: 40vw;
+  padding: 4px;
+  line-height: 1.2rem;
+  border-radius: 4px;
+  border: 2px solid #DAD8A7;
+  background-color: #111111;
+  color: #DAD8A7;
+  font-size: 1rem;
+  padding: 6px;
+}
+#subscribe button {
+  display: block;
+  margin: 1rem auto;
+  border: 2px solid #DAD8A7;
+  background-color: #111111;
+  color: #DAD8A7;
+  padding: 8px;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-family: "Ghost", sans-serif;
+  border-radius: 8px;
+}
+
+#kpi-cards {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.kpi-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  width: 20vw;
+  margin-bottom: 5rem;
+}
+.kpi-card img {
+  position: relative;
+  top: 50px;
+  width: 200px;
+  height: auto;
+}
+.kpi-card .kpi-card-text {
+  width: 100%;
+  height: 80%;
+  background-color: #DAD8A7;
+  border-radius: 1rem;
+  border: 2px solid #111111;
+  box-shadow: 4px 4px 0px #111111;
+}
+.kpi-card .kpi-card-text h2 {
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+.kpi-card .kpi-card-text p {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#cta-two {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7FC7AF;
+}
+#cta-two article {
+  display: flex;
+  flex-direction: column;
+}
+#cta-two article h1 {
+  font-size: 32px;
+  color: #111111;
+}
+#cta-two article button {
+  margin: 0px auto;
+  line-height: 1.2rem;
+  padding: 8px;
+  width: 300px;
+  border-radius: 16px;
+  background-color: #7FC7AF;
+  border: 2px solid #111111;
+  color: #111111;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  box-shadow: #111111 5px 5px 0px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
