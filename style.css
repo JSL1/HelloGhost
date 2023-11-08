@@ -330,6 +330,78 @@ section {
 footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #3FB8AF;
+  color: #F5F5F5;
+}
+footer section {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer a, footer a:hover, footer a:active {
+  color: #F5F5F5;
+  text-decoration: none;
+}
+footer hr {
+  margin: 0.5rem;
+  border: 1px solid #111111;
+  width: 80vw;
+}
+footer .footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-column ul {
+  list-style-type: none;
+}
+footer .footer-column ul li {
+  display: block;
+  line-height: 1rem;
+}
+footer .footer-column img {
+  margin: 2rem;
+  width: 200px;
+  height: auto;
+}
+footer .footer-column .icon {
+  width: 1rem;
+  height: 1rem;
+}
+footer footer {
+  display: block;
+  margin: 1rem 0px 0px 0px;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #111111;
+  background-color: #DAD8A7;
+  width: 100vw;
+  text-align: center;
+}
+footer footer a {
+  color: #111111;
+}
+
+#dev-icons {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem auto;
+  justify-content: space-around;
+  align-items: baseline;
+  color: #F5F5F5;
+}
+#dev-icons i {
+  font-size: 2.5rem;
+  margin: 0px 2.5rem 0px 2.5rem;
+}
+#dev-icons .devicon-gsap {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
