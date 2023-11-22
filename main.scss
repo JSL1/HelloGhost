@@ -43,6 +43,50 @@ nav {
     }
 }
 
+#hamburg {
+    display: none;
+    background-color: $crustedmud;
+    color: $black;
+    border: 1px solid $black;
+    border-radius: 50%;
+    padding: 0.8rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+#mobile-nav {
+    display: none;
+    width: 100vw;
+    background-color: $crustedmud;
+    color: $black;
+    li {
+        padding: 1rem 0px 1rem 0px;
+        width: 100vw;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: $black;
+        }
+        a:active, a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+    }
+    ul {
+        margin-top: 3rem;
+    }
+    .x {
+        background-color: $crustedmud;
+        border-radius: 50%;
+        border: 1px solid $black;
+        padding: 0.5rem;
+        margin: 8px 2.5rem 2rem 0px;
+        position: absolute;
+        left: 85%;
+    }
+}
+
 section {
     width: 100vw;
     display: flex;
