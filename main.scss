@@ -50,9 +50,9 @@ nav {
     border: 1px solid $black;
     border-radius: 50%;
     padding: 0.8rem;
-    position: fixed;
+    position: sticky;
     top: 1rem;
-    right: 1rem;
+    left: 80vw;
 }
 
 #mobile-nav {
@@ -107,6 +107,7 @@ section {
     background: linear-gradient(0deg, #00000088 100%, #ffffff44 30%);
     p {
         width: 40vw;
+        text-align: center;
     }
 }
 
@@ -160,7 +161,7 @@ section {
     img {
         position: relative;
         top: 150px;
-        width: 300px;
+        width: 180px;
         height: auto;
     }
 }
@@ -416,7 +417,7 @@ footer {
       }
       img {
         margin: 2rem;
-        width: 200px;
+        width: 80px;
         height: auto;
       }
       .icon {

@@ -1,6 +1,7 @@
 import './style.css';
 import './mobile-tablet.css';
-import { gsap } from 'gsap/gsap-core';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 //mobile menu / DOM functionality
 const burg = document.getElementById('hamburg');
@@ -17,4 +18,35 @@ exitButton.addEventListener('click', () => {
 
 });
 
-gsap.from('.paragraph', { duration: 1, y: '-100%', ease: 'bounce' });
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from('.paragraph1', {
+    y: -200, 
+    scrollTrigger: {
+        trigger: '.paragraph1',
+        toggleActions: "restart pause resume none",
+    },
+    duration: 1, 
+    ease: 'bounce'
+});
+
+gsap.from('.paragraph2', {
+    y: -200, 
+    scrollTrigger: {
+        trigger: '.paragraph2',
+        toggleActions: "restart pause resume none",
+    },
+    duration: 1, 
+    ease: 'bounce'
+});
+
+gsap.from('.paragraph3', {
+    y: -200, 
+    scrollTrigger: {
+        trigger: '.paragraph3',
+        toggleActions: "play none none none",
+    },
+    opacity: 0,
+    ease: 'bounce',
+    duration: 1, 
+});

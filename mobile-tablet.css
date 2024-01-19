@@ -10,6 +10,7 @@
   }
   #hamburg {
     display: block;
+    margin-left: 30px;
   }
   #mobile-nav ul {
     list-style: none;
@@ -29,7 +30,7 @@
     padding: 10px;
   }
   #hero-img {
-    width: 80vw;
+    width: 25vw;
     height: auto;
   }
   #info-cards {
@@ -94,14 +95,14 @@
 }
 @media only screen and (max-width: 1000px) {
   #hero-img {
-    width: 60vw;
+    width: 25vw;
     height: auto;
   }
   #dev-icons {
     flex-wrap: wrap;
   }
 }
-@media only screen and (min-width: 1001px) {
+@media only screen and (max-width: 1001px) {
   #mobile-nav {
     display: none;
   }

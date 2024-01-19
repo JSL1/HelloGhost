@@ -8,7 +8,10 @@
     }
 
     #main-nav { display: none; }
-    #hamburg { display: block; }
+    #hamburg { 
+        display: block; 
+        margin-left: 30px;
+    }
     #mobile-nav {
         ul {
             list-style: none;
@@ -34,7 +37,7 @@
     }
 
     #hero-img {
-        width: 80vw;
+        width: 25vw;
         height: auto;
     }
 
@@ -113,7 +116,7 @@
 @media only screen and (max-width: 1000px) {
     
     #hero-img {
-        width: 60vw;
+        width: 25vw;
         height: auto;
     }
 
@@ -123,7 +126,7 @@
 }
 
 //hiding mobile features on desktop
-@media only screen and (min-width: 1001px) {
+@media only screen and (max-width: 1001px) {
     #mobile-nav {
         display: none;
     }

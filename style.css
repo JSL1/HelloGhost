@@ -40,9 +40,9 @@ nav ul li {
   border: 1px solid #111111;
   border-radius: 50%;
   padding: 0.8rem;
-  position: fixed;
+  position: sticky;
   top: 1rem;
-  right: 1rem;
+  left: 80vw;
 }
 
 #mobile-nav {
@@ -98,6 +98,7 @@ section {
 }
 .video-hero p {
   width: 40vw;
+  text-align: center;
 }
 
 #background-video {
@@ -151,7 +152,7 @@ section {
 .info-card img {
   position: relative;
   top: 150px;
-  width: 300px;
+  width: 180px;
   height: auto;
 }
 
@@ -408,7 +409,7 @@ footer .footer-column ul li {
 }
 footer .footer-column img {
   margin: 2rem;
-  width: 200px;
+  width: 80px;
   height: auto;
 }
 footer .footer-column .icon {
